@@ -13,16 +13,16 @@ def visitUrl(url):
     except urllib2.HTTPError,e:
         print "HttpError:",e.code
     except urllib2.URLError,e:
-        print "UrlError:",e.code
+        print "UrlError:",e.message
     else:
         print "no error"
     finally:
         print "request completed"
 
-def visitCsdnBlog():
-    csdnurl = "http://blog.csdn.net/shangmingyang"
-    csdnblogurl = "http://blog.csdn.net/shangmingyang/article/details/44088753"
-    visitUrl(csdnblogurl)
-
-visitCsdnBlog();
+# def visitCsdnBlog():
+#     csdnurl = "http://blog.csdn.net/shangmingyang"
+#     csdnblogurl = "http://blog.csdn.net/shangmingyang/article/details/44088753"
+#     visitUrl(csdnblogurl)
+#
+# visitCsdnBlog();
 

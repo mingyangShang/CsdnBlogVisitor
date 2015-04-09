@@ -12,12 +12,9 @@ def visitCsdnBlog():
 
     urlthreadlist = [];
 
-    # thread1 = urlthread.urlthread(1,"shang","shangmingyang");
-
     for i in range(blogsize):
         newurlthread  = urlthread.urlthread(i,"thread"+str(i),bloglist[i]);
         urlthreadlist.append(newurlthread);
-        # urlthreadlist.append(urlthread.urlthread(id=i,name="thread"+str(i)),url=bloglist[i]); #add a urlthread to list
 
     for i in range(blogsize):
         urlthreadlist[i].start();#start urlthread
