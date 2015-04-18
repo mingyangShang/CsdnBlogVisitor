@@ -15,11 +15,9 @@ class urlthread(threading.Thread):
 
     def run(self):
         print "startThread"
-
         while(True):
-            for i in range(len(self.urls)):
-                visiting.visitUrl(self.urls[i])
-            time.sleep(20)
+            map(visiting.visitUrl,self.urls)
+            time.sleep(5)
         print "endThread"
 
 # def testThread():
