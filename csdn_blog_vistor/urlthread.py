@@ -19,11 +19,3 @@ class urlthread(threading.Thread):
             map(visiting.visitUrl,self.urls)
             time.sleep(5)
         print "endThread"
-
-# def testThread():
-#     thread1 = urlthread(id=1,name="thread1",url="http://blog.csdn.net/shangmingyang/article/details/44088753")
-#     thread2 = urlthread(id=2,name="thread2",url="http://blog.csdn.net/shangmingyang/article/details/44704787")
-#     thread1.start()
-#     thread2.start()
-
-# testThread();

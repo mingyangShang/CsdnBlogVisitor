@@ -4,13 +4,15 @@ from scrapy.http import Request
 from scrapy.selector import Selector
 import csdn_blog_vistor.urlthread
 from csdn_blog_vistor.items import CsdnBlogItem
+import csdn_blog_vistor.settings
 
 __author__ = 'smy'
 
 class CsdnBlogSpider(Spider):
 
-    csdn_root_url = "http://blog.csdn.net"
-    my_csdn_blog_url = "http://blog.csdn.net/shangmingyang"
+    csdn_root_url = "http://blog.csdn.net/"
+    # my_csdn_blog_url = "http://blog.csdn.net/shangmingyang"
+    my_csdn_blog_url = csdn_root_url + csdn_blog_vistor.settings.USERNAME
     blogs = []
 
     name = "csdn_blog"

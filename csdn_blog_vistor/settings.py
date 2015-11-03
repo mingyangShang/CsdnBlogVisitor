@@ -6,10 +6,15 @@
 #     http://doc.scrapy.org/topics/settings.html
 #
 
+# project setting
 BOT_NAME = 'csdn_blog_vistor'
 BOT_VERSION = '1.0'
 
+# spider setting
 SPIDER_MODULES = ['csdn_blog_vistor.spiders']
 NEWSPIDER_MODULE = 'csdn_blog_vistor.spiders'
 USER_AGENT = '%s/%s' % (BOT_NAME, BOT_VERSION)
 
+
+# user setting
+USERNAME = "shangmingyang"
