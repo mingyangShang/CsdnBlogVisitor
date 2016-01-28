@@ -1,6 +1,8 @@
 # CsdnBlogVisitor 
-Visit my csdn blog automatically: 自动访问我的CSDN博客
+Visit my csdn blog automatically: 
 ：[http://blog.csdn.net/shangmingyang/](http://blog.csdn.net/shangmingyang/)
+<br />
+自动访问我的CSDN博客:[http://blog.csdn.net/shangmingyang/](http://blog.csdn.net/shangmingyang/)
 
 ### What can do? 它可以做什么？
 With this project,you can visit your csdn blog automatically,then result in ......(you know)
